@@ -1,0 +1,151 @@
+/* General Reset */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: linear-gradient(135deg, #2c3e50, #bdc3c7);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Main Container */
+#main {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 90%;
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Heading Section */
+#heading {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #333;
+}
+
+#title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+p.font {
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+/* Image Section */
+#img-div {
+    padding: 20px;
+    text-align: center;
+}
+
+#image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    border: 5px solid #6a11cb;
+    transition: transform 0.3s ease;
+}
+
+#image:hover {
+    transform: scale(1.05);
+}
+
+#img-caption {
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Timeline Section */
+#tribute-info {
+    padding: 20px;
+}
+
+h2 {
+    color: #6a11cb;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.8;
+    padding: 15px;
+    background: rgba(106, 17, 203, 0.1);
+    border-left: 4px solid #6a11cb;
+    border-radius: 10px;
+}
+
+/* Quote Section */
+p.font {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #8C8C8C;
+    max-width: 700px;
+}
+
+/* Links */
+a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #6a11cb;
+    border-bottom: 2px solid #6a11cb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #title {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    li {
+        font-size: 0.9rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
